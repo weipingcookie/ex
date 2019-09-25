@@ -1,0 +1,48 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.bg-wrapper{
+	width:100%;
+	height:100vh;
+	 background: #ff4259;
+}
+.jp-wrapper{
+	overflow: hidden;
+}
+.jp-wrapper img{
+/* 	width:90%;
+	float:right;
+	display: block; */
+}
+		    .range {
+		        width: 100%;
+		        height: 0.0485rem;
+		        background: #f6f8f7;
+		        border-radius: 0.25rem;
+		        -webkit-appearance: none !important;
+/* 		        position: absolute;
+		        top: 5rem;
+		        left: 0; */
+		    }
+		    /* 进度滑块 */
+		    .range::-webkit-slider-thumb {
+		        width: 0.5rem;
+		        height: 0.5rem;
+		        background: #fff;
+		        border: 1px solid #f18900;
+		        cursor: pointer;
+		        border-radius: 0.25rem;
+		        -webkit-appearance: none !important;
+		    }
+.songproess{
+    overflow: hidden;
+    position: relative;
+    width: 65%;
+    margin: 0 auto;	
+}
+input[type=range]::-ms-fill-lower {
+    /*进度条已填充的部分*/
+
+    background: linear-gradient(to right, #fa0, white 100%, #fa0);
+}

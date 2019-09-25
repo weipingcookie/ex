@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>guesssong</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+		    <script src="http://p1.img.cctvpic.com/photoAlbum/templet/common/DEPA1504516146368634/echo.min.js"></script>
+		    <script src="http://p1.img.cctvpic.com/photoAlbum/templet/common/DEPA1486437585241505/configtool.js"></script>
+		    <script type="text/javascript" src="http://www.cctv.com/Library/a2.js"></script>
+		<script>
+			var obj = new publicRemPageTool();
+			        obj.showProper(750, true);
+			        $(document).ready(function () {
+			            echo.init({
+			                throttle: 1,
+			                offset: 500,
+			                unload: false
+			            });
+			        });
+		</script>
+		<style>
+			.jp-wrapper{
+				width:100%;
+				position:relative;
+				height:55%;
+			}
+			.gp{
+				width:90%;
+				margin: 0 auto;
+				position:absolute;
+				top:50%;
+				left:50%;
+				transform: translate(-50%,-50%);
+			}
+			.gd{
+				width:60%;
+				margin: 0 auto;
+				position:absolute;
+				right:0;
+				bottom:0;
+			}
+			.playanimation-wrapper{
+				width:4.8rem;
+				height:3rem;
+				position:absolute;
+				top:50%;
+				left:50%;
+				transform: translate(-50%,-50%);
+				
+			}
+			.yin_bo{
+						    width:4.8rem;
+						    height:3rem;
+							position:relative;
+						}
+						
+						.yin_bo b {
+						    width: .25rem;
+						    background-color: #fff09b;
+						    position: absolute;
+						    top: 50%;
+						    -webkit-transform: translate(0, -50%);
+							border-radius: 10px;
+						}
+						
+						.yin_bo b:nth-of-type(1) {
+						    left: 0;
+						}
+						
+						.yin_bo b:nth-of-type(2) {
+						    left: .57rem;
+						}
+						
+						.yin_bo b:nth-of-type(3) {
+						    left: 1.10rem;
+						}
+						
+						.yin_bo b:nth-of-type(4) {
+						    left: 1.63rem;
+						}
+						
+						.yin_bo b:nth-of-type(5) {
+						    left: 2.16rem;
+						}
+						
+						.yin_bo b:nth-of-type(6) {
+						    left: 2.69rem;
+						}
+						
+						.yin_bo b:nth-of-type(7) {
+						    left: 3.22rem;
+						}
+						
+						.yin_bo b:nth-of-type(8) {
+						    left: 3.75rem;
+						}
+						
+						.yin_bo b:nth-of-type(9) {
+						    left: 4.28rem;
+						}
+						
+			/* 			.yin_bo b:nth-of-type(10) {
+						    left: 135px;
+						}
+						
+						.yin_bo b:nth-of-type(11) {
+						    left: 150px;
+						}
+						
+						.yin_bo b:nth-of-type(12) {
+						    left: 165px;
+						} */
+						
+						.yin_bo b:nth-of-type(1) {
+						    -webkit-animation: wave .6s linear infinite;
+						    animation: wave .6s linear infinite;
+						}
+						
+						.yin_bo b:nth-of-type(2) {
+						    -webkit-animation: wave2 1s linear infinite;
+						    animation: wave2 1s linear infinite;
+						}
+						
+						.yin_bo b:nth-of-type(3) {
+						    -webkit-animation: wave3 1.2s linear infinite;
+						    animation: wave3 1.2s linear infinite;
+						}
+						
+						.yin_bo b:nth-of-type(4) {
+						    -webkit-animation: wave2 1.1s linear infinite;
+						    animation: wave2 1.1s linear infinite;
+						}
+						
+						.yin_bo b:nth-of-type(5) {
+						    -webkit-animation: wave .7s linear infinite;
+						    animation: wave .7s linear infinite;
+						}
+						
+						.yin_bo b:nth-of-type(6) {
+						    -webkit-animation: wave2 1.2s linear infinite;
+						    animation: wave2 1.2s linear infinite;
+						}
+						
+						.yin_bo b:nth-of-type(7) {
+						    -webkit-animation: wave3 1.4s linear infinite;
+						    animation: wave3 1.4s linear infinite;
+						}
+						
+						.yin_bo b:nth-of-type(8) {
+						    -webkit-animation: wave2 .9s linear infinite;
+						    animation: wave2 .9s linear infinite;
+						}
+						
+						.yin_bo b:nth-of-type(9) {
+						    -webkit-animation: wave .8s linear infinite;
+						    animation: wave .8s linear infinite;
+						}
+						
+			/* 			.yin_bo b:nth-of-type(10) {
+						    -webkit-animation: wave 1.5s linear infinite;
+						    animation: wave 1.5s linear infinite;
+						}
+						
+						.yin_bo b:nth-of-type(11) {
+						    -webkit-animation: wave 1.2s linear infinite;
+						    animation: wave 1.2s linear infinite;
+						}
+						
+						.yin_bo b:nth-of-type(12) {
+						    -webkit-animation: wave 0.8s linear infinite;
+						    animation: wave 0.8s linear infinite;
+						} */
+						
+						@-webkit-keyframes wave {
+						    0% {
+						        height: 15px
+						    }
+						    50% {
+						        height: 30px
+						    }
+						    100% {
+						        height: 15px
+						    }
+						}
+						
+						@keyframes wave {
+						    0% {
+						        height: 15px
+						    }
+						    50% {
+						        height: 30px
+						    }
+						    100% {
+						        height: 15px
+						    }
+						}
+						
+						@-webkit-keyframes wave2 {
+						    0% {
+						        height: 27px
+						    }
+						    50% {
+						        height: 54px
+						    }
+						    100% {
+						        height: 27px
+						    }
+						}
+						
+						@keyframes wave2 {
+						    0% {
+						        height: 27px
+						    }
+						    50% {
+						        height: 54px
+						    }
+						    100% {
+						        height: 27px
+						    }
+						}
+						
+						@-webkit-keyframes wave3 {
+						    0% {
+						        height: 43px
+						    }
+						    50% {
+						        height: 86px
+						    }
+						    100% {
+						        height: 43px
+						    }
+						}
+						
+						@keyframes wave3 {
+						    0% {
+						        height: 43px
+						    }
+						    50% {
+						        height: 86px
+						    }
+						    100% {
+						        height: 43px
+						    }
+						}
+		</style>
+	</head>
+	<body>
+		<div class="bg-wrapper">
+			<div class="jp-wrapper">
+				<img class="gp" src="images/jps.png">
+				<img class="gd" src="images/ygt.png">
+				<div class="playanimation-wrapper">
+					<div class="yin_bo">
+					    <b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b>
+					</div>
+				</div>
+			</div>
+			<div class="songproess">
+				<audio src='audio/11391.wav' id='ao'></audio>
+				<span class='cur'></span><input type="range" min=0 max=100 class='range' value= /><span class='max'></span>
+				<button class='play'>play</button>
+				<button class='pause'>pause</button>
+			</div>
+		</div>
+		<script>
+			$.fn.RangeSlider = function(cfg){
+			    this.sliderCfg = {
+			        min: cfg && !isNaN(parseFloat(cfg.min)) ? Number(cfg.min) : null, 
+			        max: cfg && !isNaN(parseFloat(cfg.max)) ? Number(cfg.max) : null,
+			        step: cfg && Number(cfg.step) ? cfg.step : 1,
+			        callback: cfg && cfg.callback ? cfg.callback : null
+			    };
+			
+			    var $input = $(this);
+			    var min = this.sliderCfg.min;
+			    var max = this.sliderCfg.max;
+			    var step = this.sliderCfg.step;
+			    var callback = this.sliderCfg.callback;
+			
+			    $input.attr('min', min)
+			        .attr('max', max)
+			        .attr('step', step);
+			
+			    $input.bind("input", function(e){
+			        $input.attr('value', this.value);
+			        $input.css( 'background', 'linear-gradient(to right, #059CFA, white ' + this.value + '%, white)' );
+			
+			        if ($.isFunction(callback)) {
+			            callback(this);
+			        }
+			    });
+			};
+			
+			//将秒数转为00:00格式
+			function timeToStr(time) {
+				var m = 0,
+					s = 0,
+					_m = '00',
+					_s = '00';
+				time = Math.floor(time % 3600); //小时
+				m = Math.floor(time / 60); //
+				s = Math.floor(time % 60);
+				_s = s < 10 ? '0' + s : s + '';
+				_m = m < 10 ? '0' + m : m + '';
+				return _m + ":" + _s;
+			}
+			//触发播放事件
+			var audio = document.getElementById('ao');
+			$('.play').on('click', function() {
+				var duration = audio.duration;
+				$(".range").attr({
+					'max': duration
+				});
+				$('.max').html(timeToStr(duration));
+				audio.play();
+			
+				function timer() {
+					var t = parseInt(Math.round(audio.currentTime));
+					$(".range").val(t);
+					$('.cur').text(timeToStr(t));
+					t = parseInt(audio.currentTime);
+					if (t < duration) {
+						setTimeout(timer, 1000);
+					} else {
+						clearTimeout(timer);
+					}
+				}
+				timer();
+			});
+			$('.pause').on('click', function() {
+				audio.pause();
+			})
+			//监听滑块，可以拖动
+			$(".range").on('change', function() {
+				audio.currentTime = this.value;
+				console.log(this.value)
+				$(".range").val(this.value);
+			});
+			
+			$('input').RangeSlider({ min: 0,   max: 100,  step: 0.1});
+		</script>
+	</body>
+</html>
+ 
